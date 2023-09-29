@@ -1,0 +1,24 @@
+ <div class="rate-content">
+        <div class="star-bg">
+          <img src="../assets/images/icon-star.svg" alt="icon-star" />
+        </div>
+        <p class="question">How did we do?</p>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form #f="ngForm" (submit)="submit(f)">
+          <div class="rate-container">
+            <label
+              class="rate"
+              [ngClass]="{ selected: active === val }"
+              *ngFor="let val of [1, 2, 3, 4, 5]"
+              (click)="setActive(val)"
+            >
+              <input type="radio" name="rate" [value]="val" [ngModel] />
+              {{ val }}
+            </label>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+      </div>

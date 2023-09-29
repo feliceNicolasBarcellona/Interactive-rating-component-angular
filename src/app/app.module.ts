@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { SubmitFormComponent } from './submit-form/submit-form.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SubmitFormComponent, ThankyouComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

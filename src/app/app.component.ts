@@ -9,16 +9,17 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   title = 'interactive-rating-component-main-angular';
 
-  rate: number | null = null;
+  rating: number | null = null
   active: number | null = null;
   toggle: boolean = true;
 
-  setActive(val: number) {
+  onSetActive(val: number) {
     this.active = val;
   }
 
-  submit(form: NgForm) {
-    this.rate = form.value.rate
+  onFormSubmitted(rating: number) {
+    this.rating = rating;
     this.toggle = !this.toggle
   }
+
 }
