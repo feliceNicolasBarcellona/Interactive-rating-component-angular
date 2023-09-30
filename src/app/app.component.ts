@@ -12,6 +12,7 @@ export class AppComponent {
   rating: number | null = null
   active: number | null = null;
   toggle: boolean = true;
+  iconStar: string = 'assets/icon-star.svg'
 
   onSetActive(val: number) {
     this.active = val;

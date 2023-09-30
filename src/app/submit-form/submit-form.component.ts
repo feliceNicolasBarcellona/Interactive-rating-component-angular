@@ -10,6 +10,7 @@ export class SubmitFormComponent {
   @Output() rate = new EventEmitter<number>();
   @Output() val = new EventEmitter<number>()
   @Input() active: number | null = null
+  @Input() iconStar: string | null = null
 
   submit(form: NgForm) {
     let rate = form.value.rate;

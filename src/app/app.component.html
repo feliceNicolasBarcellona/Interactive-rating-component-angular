@@ -1,7 +1,7 @@
 <main>
   <div class="card">
     <div *ngIf="toggle">
-     <app-submit-form (rate)="onFormSubmitted($event)" (val)="onSetActive($event)"></app-submit-form>
+     <app-submit-form (rate)="onFormSubmitted($event)" (val)="onSetActive($event)" [iconStar]="iconStar"></app-submit-form>
     </div>
     <div *ngIf="!toggle">
       <app-thankyou [rating]="rating"></app-thankyou>
