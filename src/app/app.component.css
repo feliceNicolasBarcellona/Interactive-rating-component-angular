@@ -19,4 +19,10 @@ main {
   main {
     max-width: 375px;
   }
+
+  .card {
+    width: 329px;
+    height: 359px;
+    border-radius: 20px;
+  }
 }

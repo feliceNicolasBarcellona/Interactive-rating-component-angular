@@ -32,3 +32,32 @@
   line-height: 1.6em;
   color: var(--medium-grey);
 }
+
+@media only screen and (max-width: 768px) {
+  .thank-you-content{
+    padding: 35px 29px 44px;
+  }
+
+  .thank-you-content img{
+    height: 95px;
+    width: 146px;
+  }
+
+  .result {
+    margin: 19px auto;
+    width: 170px;
+  }
+
+  .result-text{
+    font-size: 13.5px;
+  }
+
+  .thank-you {
+    margin: 25px 0 0 0;
+    font-size: 24.5px;
+  }
+
+  .message {
+    font-size: 13.7px;
+  }
+}

@@ -20,7 +20,7 @@
 
 .description {
   color: var(--medium-grey);
-  font-size: 400;
+  font-weight: 400;
   margin: 10px 0 0 0;
   line-height: 1.6em;
 }
@@ -72,4 +72,42 @@ button {
   font-size: 14px;
   letter-spacing: 3px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .rate-content {
+    padding: 25px 25px;
+  }
+
+  .star-bg {
+    width: 41px;
+    height: 41px;
+  }
+
+  .star-bg img {
+    width: 14px;
+    height: 13px;
+  }
+
+  .question {
+    margin: 16px 0 0 0;
+    font-size: 24px;
+  }
+
+  .description {
+    margin: 13px 0 0 0 ;
+    font-size: 14px;
+  }
+
+  .rate {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  button {
+    margin: 22px 0 0 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
 }
