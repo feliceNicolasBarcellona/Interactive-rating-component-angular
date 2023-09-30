@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ThankyouComponent {
   @Input() rating: number | null = null
+  @Input() illustrationThankYou: string | null = null
 }
